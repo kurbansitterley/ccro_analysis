@@ -27,33 +27,15 @@ from watertap.costing import WaterTAPCosting
 from idaes.core.util.scaling import calculate_scaling_factors
 
 import ccro_analysis.utils.utils as cc_utils
-
-# import watertap.flowsheets.ccro.utils.utils as cc_utils
-# import watertap.flowsheets.ccro.ccro_flowsheet_functions.unit_operations as unit_operations
 import ccro_analysis.model_build.unit_operations as unit_operations
 from ccro_analysis.utils.cc_configuration import CCROConfiguration
-
-# from watertap.flowsheets.ccro.utils.cc_configuration import CCROConfiguration
 from ccro_analysis.model_build import (
     multi_period_constraints as ccro_mp_constraints,
     scaling as ccro_scaling,
     operating_conditions as ccro_operating_conditions,
 )
-
-# from watertap.flowsheets.ccro.ccro_flowsheet_functions import (
-#     multi_period_constraints as ccro_mp_constraints,
-#     scaling as ccro_scaling,
-#     operating_conditions as ccro_operating_conditions,
-# )
-# import watertap.flowsheets.ccro.utils.ipoptv2 as ipt2
 import ccro_analysis.utils.ipoptv2 as ipt2
-from ccro_analysis.unit_models.membrane_channel_base import (
-    ConcentrationPolarizationType,
-    MassTransferCoefficient,
-    PressureChangeType,
-    FrictionFactor,
-    ModuleType,
-)
+
 
 here = os.path.dirname(os.path.abspath(__file__))
 
