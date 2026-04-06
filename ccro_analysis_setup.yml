@@ -1,4 +1,4 @@
-name: ccro_analysis_test
+name: ccro_analysis
 channels: 
   - conda-forge
   - defaults
