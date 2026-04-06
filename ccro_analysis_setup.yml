@@ -1,0 +1,12 @@
+name: ccro_analysis_test
+channels: 
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11*
+  - git
+  - pytest
+  - pip
+  - pip:
+    - git+https://github.com/avdudchenko/psPlotKit.git
+    - -r requirements.txt
